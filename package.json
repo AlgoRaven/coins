@@ -1,6 +1,6 @@
 {
   "author": "AlgoRaven",
-  "name": "@raven-crypto/raven-config",
+  "name": "@raven-crypto/raven-coins",
   "version": "0.0.5",
   "private": false,
   "main": "build/index.js",
