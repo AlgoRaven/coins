@@ -1,4 +1,9 @@
-printWidth: 100
-semi: false
-singleQuote: true
-trailingComma: all
+{
+    "printWidth": 120,
+    "trailingComma": "all",
+    "tabWidth": 4,
+    "singleQuote": true,
+    "semi": false,
+    "useTabs": true,
+    "jsxBracketSameLine": false
+}

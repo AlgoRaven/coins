@@ -1,28 +1,30 @@
-# cryptoicons-cdn
+# raven-coins
 
-> Cryptocurrencies-related icons served over CDN
+[<img src="https://badge.fury.io/js/%40raven-crypto%2Fraven-coins.svg" />](https://www.npmjs.com/package/@raven-crypto/raven-coins)
 
-    yarn add cryptoicons-cdn
+Cryptocurrency logo CDN.
 
-### Usage
+## Contribution
 
-```js
-import getImage from 'cryptoicons-cdn'
+Steps for contributing:
+1. Create a feature branch
+2. Push your new icons to your feature branch in the `/images` directory.
+3. Create a Pull Request on GitHub
 
-const imageUrl = getImage('ETH')
-```
+## Publishing to NPM
 
-If you pass the string `dark` as a second param, it will return an alternative
-whitescale icon if available to work on darker backgrounds.
+Pushes to `main` are automatically published to NPM. Please use caution and consult with the team before pushing to `main`.
 
-### Colors
+## Using this Libary
 
-```js
-import getColor from 'cryptoicons-cdn/getColor'
+1. Install: `yarn add @raven-crypto/raven-coins`
 
-const color = getColor('MFT')
-```
+2. Import the `getCoinImage` function as follows.
+    ```
+    import { getCoinImage } from '@raven-crypto/raven-coins'`
+    ```
 
-Will return the vibrant or main color of the logo of the given ticker. By default,
-it fallbacks to `#232323` if no defined color has been found. Pass `false` as a second
-parameter to disable it.
+3. Call the function with your desired coin.
+    ```
+    const coinImageUrl = getCoinImage('DOGE')
+    ```
