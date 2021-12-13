@@ -25,7 +25,7 @@ const getUrl = (symbol: string) => {
 	return `${BASE_URL}${parseCoinSymbol(symbol)}.png`
 }
 
-export const getCoinImage = async (coinSymbol: string): Promise<string | undefined> => {
+export const getCoinImage = async (coinSymbol: string): Promise<string> => {
 	const url = getUrl(coinSymbol)
 	try {
 		const res = await fetch(url, {
