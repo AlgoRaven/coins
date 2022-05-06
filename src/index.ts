@@ -15,18 +15,24 @@ const UNKNOWN = 'UNKNOWN'
 const BASE_URL = `https://raw.githubusercontent.com/${CONFIG.OWNER}/${CONFIG.REPO}/${CONFIG.BRANCH}/images/`
 
 const parseCoinSymbol = (coin: string) => {
-	if (coin.length === 0) {
-		return coin
-	}
-	return coin.split('-')[0].toUpperCase()
+	return coin.toUpperCase()
 }
 
 const getUrl = (symbol: string) => {
 	return `${BASE_URL}${parseCoinSymbol(symbol)}.png`
 }
 
-export const getCoinImage = async (coinSymbol: string): Promise<string> => {
+/**
+ * Get the image url for a coin from GitHub.
+ * @param coinSymbol The symbol to fetch the image for.
+ * @param skipCheck If true, a fallback image is not returned if not found.
+ * @returns A string image URL.
+ */
+export const getCoinImage = async (coinSymbol: string, skipCheck: boolean = false): Promise<string> => {
 	const url = getUrl(coinSymbol)
+	if (skipCheck) {
+		return url
+	}
 	try {
 		const res = await fetch(url, {
 			method: 'GET',
