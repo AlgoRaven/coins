@@ -1,12 +1,12 @@
 {
-  "author": "AlgoRaven",
-  "name": "@raven-crypto/raven-coins",
+  "author": "BitBird, Inc. <hi@algoraven.com>",
+  "name": "@algoraven/coins",
   "version": "0.0.8",
   "private": false,
   "main": "build/index.js",
   "types": "build/index.d.ts",
   "dependencies": {
-    "@raven-crypto/raven-scripts": "^0.0.14",
+    "@algoraven/scripts": "^0.0.21",
     "@types/node-fetch": "^2.0.3",
     "node-fetch": "^2.0.0",
     "typescript": "^4.3.5"
@@ -19,8 +19,8 @@
     "soft-format": "prettier --check \"src/**/*.ts\" \"src/**/*.js\"",
     "lint": "tslint -p tsconfig.json --fix",
     "soft-lint": "tslint -p tsconfig.json",
-    "upraven": "yarn add @raven-crypto/raven-scripts@latest",
-    "protect": "raven-scripts protect",
+    "upraven": "yarn add @algoraven/scripts@latest",
+    "protect": "algoraven protect",
     "precommit": "yarn lint && yarn format && yarn build"
   },
   "devDependencies": {

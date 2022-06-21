@@ -6,7 +6,7 @@ if (!globalThis.fetch) {
 
 const CONFIG = {
 	OWNER: 'AlgoRaven',
-	REPO: 'raven-coins',
+	REPO: 'coins',
 	BRANCH: 'main',
 	USER_AGENT: 'algoraven.com',
 }

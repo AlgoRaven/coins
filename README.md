@@ -1,6 +1,6 @@
-# raven-coins
+# coins
 
-[<img src="https://badge.fury.io/js/%40raven-crypto%2Fraven-coins.svg" />](https://www.npmjs.com/package/@raven-crypto/raven-coins)
+[<img src="https://badge.fury.io/js/%40algoraven%2Fcoins.svg" />](https://www.npmjs.com/package/@algoraven/coins)
 
 Cryptocurrency logo CDN.
 
@@ -17,11 +17,11 @@ Pushes to `main` are automatically published to NPM. Please use caution and cons
 
 ## Using this Libary
 
-1. Install: `yarn add @raven-crypto/raven-coins`
+1. Install: `yarn add @algoraven/coins`
 
 2. Import the `getCoinImage` function as follows.
     ```
-    import { getCoinImage } from '@raven-crypto/raven-coins'`
+    import { getCoinImage } from '@algoraven/coins'`
     ```
 
 3. Call the function with your desired coin.
