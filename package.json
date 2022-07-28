@@ -2,7 +2,7 @@
   "author": "BitBird, Inc. <hi@algoraven.com>",
   "name": "@algoraven/coins",
   "version": "0.0.13",
-  "private": false,
+  "private": true,
   "main": "build/index.js",
   "types": "build/index.d.ts",
   "dependencies": {
@@ -21,7 +21,7 @@
     "soft-lint": "tslint -p tsconfig.json",
     "upraven": "yarn add @algoraven/scripts@latest",
     "protect": "algoraven protect",
-    "precommit": "yarn lint && yarn format && yarn build && yarn gitadd",
+    "precommit": "yarn lint && yarn format && yarn build && yarn protect && yarn gitadd",
     "gitadd": "git add $(git diff --name-only --cached)"
   },
   "devDependencies": {
@@ -37,8 +37,5 @@
   ],
   "files": [
     "build/**/*"
-  ],
-  "engines": {
-    "node": "= 16.x"
-  }
+  ]
 }
