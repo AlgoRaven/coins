@@ -37,5 +37,8 @@
   ],
   "files": [
     "build/**/*"
-  ]
+  ],
+  "engines": {
+    "node": "= 16.x"
+  }
 }
